@@ -55,9 +55,9 @@ func (p *Powerline) PrintSegments() string {
 			nextBackground = p.BackgroundColor(p.Segments[i+1][1])
 		}
 		if len(Segment) == 3 {
-			buffer.WriteString(fmt.Sprintf("%s%s %s %s%s", p.ForegroundColor(Segment[0]), p.BackgroundColor(Segment[1]), Segment[2], nextBackground, p.ForegroundColor(Segment[1])))
+			buffer.WriteString(fmt.Sprintf("%s%s%s%s%s", p.ForegroundColor(Segment[0]), p.BackgroundColor(Segment[1]), Segment[2], nextBackground, p.ForegroundColor(Segment[1])))
 		} else {
-			buffer.WriteString(fmt.Sprintf("%s%s %s %s%s", p.ForegroundColor(Segment[0]), p.BackgroundColor(Segment[1]), Segment[2], nextBackground, p.ForegroundColor(Segment[4])))
+			buffer.WriteString(fmt.Sprintf("%s%s%s%s%s", p.ForegroundColor(Segment[0]), p.BackgroundColor(Segment[1]), Segment[2], nextBackground, p.ForegroundColor(Segment[4])))
 		}
 	}
 
