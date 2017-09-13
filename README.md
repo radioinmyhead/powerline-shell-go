@@ -8,8 +8,8 @@ This application does not cover all features of powerline-shell, only those that
 
 Install the binary with
 
-    go get github.com/sivel/powerline-shell-go
-    go install github.com/sivel/powerline-shell-go
+    go get github.com/radioinmyhead/powerline-shell-go
+    go install github.com/radioinmyhead/powerline-shell-go
 
 ### Bash
 
