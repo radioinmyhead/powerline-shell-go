@@ -25,7 +25,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/sivel/powerline-shell-go/powerline"
+	"github.com/radioinmyhead/powerline-shell-go/powerline"
 )
 
 func getCurrentWorkingDir() (string, []string) {

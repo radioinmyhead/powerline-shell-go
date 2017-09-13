@@ -55,7 +55,7 @@ func (p *Powerline) PrintSegments() string {
 			nextBackground = p.BackgroundColor(p.Segments[i+1][1])
 		}
 		if len(Segment) == 3 {
-			buffer.WriteString(fmt.Sprintf("%s%s %s %s%s%s", p.ForegroundColor(Segment[0]), p.BackgroundColor(Segment[1]), Segment[2], nextBackground, p.ForegroundColor(Segment[1]), p.Separator))
+			buffer.WriteString(fmt.Sprintf("%s%s %s %s%s", p.ForegroundColor(Segment[0]), p.BackgroundColor(Segment[1]), Segment[2], nextBackground, p.ForegroundColor(Segment[1])))
 		} else {
 			buffer.WriteString(fmt.Sprintf("%s%s %s %s%s%s", p.ForegroundColor(Segment[0]), p.BackgroundColor(Segment[1]), Segment[2], nextBackground, p.ForegroundColor(Segment[4]), Segment[3]))
 		}
@@ -70,7 +70,6 @@ func NewPowerline(shell string) Powerline {
 	p := Powerline{
 		Lock:          "\uE0A2",
 		Network:       "\uE0A2",
-		Separator:     "\uE0B0",
 		SeparatorThin: "\uE0B1",
 		Ellipsis:      "\u2026",
 	}
